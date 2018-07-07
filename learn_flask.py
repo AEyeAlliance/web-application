@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
-import time
-import os, sys
+import sys
 
 sys.path.insert(0, 'final_model')
 from space_recognition_original import make_prediction
