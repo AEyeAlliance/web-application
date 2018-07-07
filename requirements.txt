@@ -1,9 +1,6 @@
-torchvision==0.2.1
-opencv_python==3.4.1.15
-Flask==1.0.2
-Flask_Uploads==0.2.1
-matplotlib==2.2.2
-pandas==0.23.0
 numpy==1.14.3
+Flask==1.0.2
 torch==0.4.0
+opencv_python==3.4.1.15
+Flask_Uploads==0.2.1
 Pillow==5.2.0
