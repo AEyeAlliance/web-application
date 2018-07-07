@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Upload Results </title>
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <link rel="icon" type="image/png" href="{{ url_for('static', filename='AEyeLogo.png') }}">
+        <style>
+            body {
+                background-color: black;
+                font-family: 'Poppins', sans-serif;
+                background-image: url("https://cdn.dribbble.com/users/32512/screenshots/3025506/artificial_intelligence_product_rokid.gif");
+                background-repeat: no-repeat;
+                background-position: bottom right;
+                background-attachment: fixed;
+                padding: 100px;
+                background-size: 15%;
+                margin-top: 0;
+                padding: 0;
+                text-align: center;
+                color: white;
+            }
+
+            h1 {
+                font-size: 60px;
+                margin-bottom: 0;
+                margin-top: 0;
+            }
+
+            nav {
+                font-size: 30px;
+                padding: 0;
+                margin-top: 0;
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+                font-size: 35px;
+            }
+
+            a:hover {
+                color: blue;
+                transition: 0.3s;
+            }
+
+            h2 {
+                color: DodgerBlue;
+                font-size: 50px;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <h1> Results </h1>
+
+        <nav> 
+            <a href = "/"> Home </a> </br>
+            <a href = "/tutorial_slider"> Tutorial </a> </br>
+            <a href = "/aboutus"> About Us </a> </br>
+            <a href = "https://github.com/AEyeAlliance/aeye-alliance"> Source Code </a> </br>
+            <a href = "/upload"> Upload Image</a>
+        </nav> 
+
+        <img align="middle" src="../static/{{filename}}/" alt="Italian Trulli">
+        <!-- Display the word {{letter}} -->
+        <h2 class = "translation"> Letter in English: </h2>
+        <script>
+            document.getElementsByClassName("translation")[0].innerHTML = "Translation: {{letter}}"
+        </script>
+        
+    </body>
+</html>
