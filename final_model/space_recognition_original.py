@@ -4,7 +4,6 @@ import numpy as np
 import cv2
 from PIL import Image
 
-
 def make_prediction(img_path):
     model = CNN()
     model.load_state_dict(torch.load("final_model/model.pth"))
@@ -118,21 +117,13 @@ class CNN(nn.Module):
             nn.LeakyReLU(),
             nn.Linear(100, 37)
         )
-        # 1x36
+        # 1x37
 
     def forward(self, x):
         out = self.block1(x)
         out = self.block2(out)
         # flatten the dataset
-        # ipdb; ipdb.set_trace()
         out = out.view(-1, 32 * 7 * 7)
         out = self.block3(out)
-
+        
         return out
-
-# print(make_prediction("test/Prairie.jpg"))
-# print(make_prediction("test/He_was_happy..png"))
-# print(make_prediction("test/the_little.png"))
-# print(make_prediction("test/with_his_family.png"))
-# print(make_prediction("test/with_his_mouth..png"))
-# print(make_prediction("test/would_run_and_get_it.png"))
