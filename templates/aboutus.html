@@ -67,8 +67,9 @@
 
 		p {
 			text-align:left;
-			padding-top: 20px;
-			padding-bottom: 20px;
+			/*padding-top: 15px;
+			padding-bottom: 15px;*/
+			color: white;
 		}
 
 		.journey {
@@ -76,24 +77,14 @@
 			padding-right: 200px;
 		}
 
-		h2 {
-			font-size: 35px;
-			color: white;
-		}
-
 		caption {
 			font-size: 20px;
-			color: white;
+			color: LightSkyBlue;
 		}
 
 		.about {
 			padding-left: 200px;
 			padding-right: 200px;
-		}
-
-		.objective {
-			font-size: 20px;
-			color: LightSkyBlue;
 		}
 
 		.column {
@@ -117,82 +108,89 @@
 			text-align: left;
 		}
 
+		h3 {
+			color: DodgerBlue;
+			font-size: 40px;
+			text-align: left;
+		}
+
 	</style>	
 </head>
 <body>
 
 	<h1> About Us </h1>
-	
 		 <nav> 
             <a href = "/"> Home </a> </br>
             <a href = "/tutorial_slider"> Tutorial </a> </br>
             <a href = "https://github.com/AEyeAlliance"> Source Code </a> </br>
             <a href = "/upload"> Upload Image </a>
         </nav></br>
-
 	<div class="row">
+		<hr style="border: 2px solid blue;"/>
+		<h3>Our Team</h3>
 		<div class="column">
 			<table>
-			<caption align="bottom" style="color:DodgerBlue">Wan-Chun Su</caption>
-			<tr><td><a href="https://www.linkedin.com/in/wan-chun-su-1020/"><img src="{{ url_for('static', filename='wan-chun.jpg') }}" alt="Us at the hackathon" class="center"></a></td></tr>
+			<caption align="bottom" style="color:LightSkyBlue">Wan-Chun Su</caption>
+			<tr><td><a href="https://www.linkedin.com/in/wan-chun-su-1020/"><img src="{{ url_for('static', filename='wan-chun.jpg') }}" alt="Wan-Chun's face" class="center"></a></td></tr>
 			</table>
-			<!-- <img src="{{ url_for('static', filename='wan-chun.jpg') }}" alt="Snow" style="width:100%"> -->
 		</div>
 		<div class="column">
 			<table>
-			<caption align="bottom" style="color:DodgerBlue">Helen Gezahegn</caption>
-			<tr><td><a href="https://www.linkedin.com/in/helen-gezahegn/"><img src="{{ url_for('static', filename='helen.jpg') }}" alt="Us at the hackathon" class="center"></a></td></tr>
+			<caption align="bottom" style="color:LightSkyBlue">Helen Gezahegn</caption>
+			<tr><td><a href="https://www.linkedin.com/in/helen-gezahegn/"><img src="{{ url_for('static', filename='helen.jpg') }}" alt="Helen's face" class="center"></a></td></tr>
 			</table>
-			<!-- <img src="{{ url_for('static', filename='helen.jpg') }}" alt="Forest" style="width:100%"> -->
 		</div>
 		<div class="column">
 			<table>
-			<caption align="bottom" style="color:DodgerBlue">Marin Ito</caption>
-			<tr><td><a href="https://www.linkedin.com/in/marin-ito-455824100/"><img src="{{ url_for('static', filename='marin.jpg') }}" alt="Us at the hackathon" class="center"></a></td></tr>
+			<caption align="bottom" style="color:LightSkyBlue">Marin Ito</caption>
+			<tr><td><a href="https://www.linkedin.com/in/marin-ito-455824100/"><img src="{{ url_for('static', filename='marin.jpg') }}" alt="Marin's face" class="center"></a></td></tr>
 			</table>
-			<!-- <img src="{{ url_for('static', filename='marin.jpg') }}" alt="Mountains" style="width:100%"> -->
 		</div>
 		<div class="column">
 			<table>
-			<caption align="bottom" style="color:DodgerBlue">Ting-Yi Su</caption>
-			<tr><td><a href="https://www.linkedin.com/in/ting-yi-su-073a41147/"><img src="{{ url_for('static', filename='ting-yi.jpg') }}" alt="Us at the hackathon" class="center"></a></td></tr>
+			<caption align="bottom" style="color:LightSkyBlue">Ting-Yi Su</caption>
+			<tr><td><a href="https://www.linkedin.com/in/ting-yi-su-073a41147/"><img src="{{ url_for('static', filename='ting-yi.jpg') }}" alt="Ting-Yi's face" class="center"></a></td></tr>
 			</table>
-			<!-- <img src="{{ url_for('static', filename='ting-yi.jpg') }}" alt="Mountains" style="width:100%"> -->
 		</div>
 	</div>
 	<div class="about">
-		<p style="color:LightCyan">We are a group of four undergraduate female students in computer science who were partaking in the AI4SocialGood Lab at McGill University. Throughout the first 2 weeks of the lab, we learned about AI and machine learning techniques and are now applying this knowledge to solve a social problem.</p>
-		<p style="color:PowderBlue">Based on personal experience, we felt that there weren't enough technology out there to help non-blind people interact and communicate with blind people. So, we decided to create a braille-to-text converter that is able to take an image of a line (a word, sentence, or a character) of Braille, recognize it, and output its English counterpart. Using data acquired from rare book collections and the internet, we constructed our own dataset consisting of multiple sets of the Braille alphabet, numbers, and symbols. We then trained an AI that will recognize images of individual Braille characters and translate them into English characters. Using a specific ratio and cropping function, we are able to take an image of a sentence/line of Braille and segment each Braille character out individually. We feed each of these characters into our model and then concatenate the output characters together into an English sentence or word.</p>
-		<p class="objective">The main objective of this project is to bring awareness of Braille and to bridge the gap of communication between blind and non-blind people. We hope this project raised your awareness of Braille and might even be of use at some point in your life, especially if someone you know is blind and uses Braille to read!</p> 		
+		<p>We are a group of four undergraduate female students who were partaking in the AI4SocialGood Lab at McGill University. During the lab, we learnt about technical concepts in artificial intelligence and machine learning and are now applying this knowledge to implement an innovative AI solution to a social problem.</p></br>
+		<hr style="border: 2px solid blue;"/>
+		<h3>Our Mission</h3>
+		<p>Based on personal experience, we felt that there weren't enough technology out there to help non-blind people interact and communicate with blind people. So, we decided to create a braille-to-text converter that is able to take an image of a line (a word, sentence, or a character) of Braille, recognize it, and output its English counterpart. Using data acquired from rare book collections and the internet, we constructed our own dataset consisting of multiple sets of the Braille alphabet, numbers, and symbols. We then trained an AI that will recognize images of individual Braille characters and translate them into English characters. Using a specific ratio and cropping function, we are able to take an image of a sentence/line of Braille and segment each Braille character out individually. We feed each of these characters into our model and then concatenate the output characters together into an English sentence or word.</p></br>
+		<hr style="border: 2px solid blue;"/>
+		<h3>Our Purpose</h3>
+		<p>The main objective of this project is to bring awareness of Braille and to bridge the gap of communication between blind and non-blind people. We hope this project raised your awareness of Braille and might even be of use at some point in your life, especially if someone you know is blind and uses Braille to read!</p></br> 		
 	</div>
 
 	<div class="journey">
-		<!-- "{{ url_for('static', filename='img1.png') }}"-->
-		</br><h2>Catch a glimpse of our journey below...</h2></br>
+		<hr style="border: 2px solid blue;"/>
+		<h3>Our Journey</h3>
 		<table>
 		<caption align="bottom">Where it all began...</caption>
 		<tr><td><img src="{{ url_for('static', filename='before.jpg') }}" alt="Us at the hackathon" class="center"></td></tr>
 		</table>
-		<p style="color:PowderBlue">Our braille-to-text-converter started off as a project for the AI4SocialGood Hackathon 2018 hosted at Desjardins Lab. Because we didn't have time to complete most of our goals for the project during the 24hrs duration of the hackathon, we decided to continue the project as our final project for the AI4SocialGood Lab that we are all participating in.</p>
-
+		<p>Our braille-to-text-converter started off as a project for the AI4SocialGood Hackathon 2018 hosted at Desjardins Lab. Because we didn't have time to complete most of our goals for the project during the 24hrs duration of the hackathon, we decided to continue the project as our final project for the AI4SocialGood Lab that we are all participating in.</p>
 		<table>
 		<caption align="bottom">Us during the last 3 weeks of the lab!</caption>
 		<tr><td><img src="{{ url_for('static', filename='after.jpg') }}" alt="Us at espace cdpq" class="center"></td></tr>
 		</table>
-		<p style="color:PowderBlue">We were able to accomplish most of our goals (and even learnt English Grade 1 Braille along the way!) for the project during the lab. We are continuing to work on this project because we have more future goals that we would like to accomplish:</p>
-		<ul style="color:PowderBlue">
+		<p>We were able to accomplish most of our goals (and even learnt English Grade 1 Braille along the way!) for the project during the lab, and are continuing to work on this project even after the lab!</p></br> 
+		<hr style="border: 2px solid blue;"/>
+		<h3>Our Future Goals</h3>
+		<ul style="color:white">
 			<li>create an even larger dataset that we plan on releasing as open source</li>
 			<li>try out image segmentation so that we can translate multiple lines of Braille at once</li>
 			<li>deploy our Flask app using either Pythonanywhere, Heroku, or OpenShift so that it is accessible</li> 
 			<li>rewrite our PyTorch model in Tensorflow to hopefully avoid kernel errors when feeding images into our android app</li>
 			<li>add our android app to app stores</li>
-		</ul></br></br></br>
+		</ul></br>
+		<hr style="border: 2px solid blue;"/></br></br>
 
 		<table>
-		<caption align="bottom" style="color:LightPink">Special thanks to our mentors Peng Yu and Francis Gregoire! We couldn't have gotten this far without them! &#9825</caption>
+		<caption align="bottom">Special thanks to our mentors Peng Yu and Francis Gregoire! We couldn't have gotten this far without them! &#9825</caption>
 		<tr><td><img src="{{ url_for('static', filename='with_mentors_1.jpg') }}" alt="Us with our mentors" class="center"></td></tr>
 		</table>
-		<p class="love"></p>
 	</div>
 
 	<div class="bottom"> </br> 

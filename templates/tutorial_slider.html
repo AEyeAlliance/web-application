@@ -83,7 +83,7 @@
         }
             
         .image-holder {
-            width: 4000px;
+            width: 5000px;
             background-color: black;
             height: 350px;
             clear: both;
@@ -117,6 +117,10 @@
         #slider-image-4:target ~ .image-holder {
             left: -3000px;
         }
+
+         #slider-image-5:target ~ .image-holder {
+            left: -4000px;
+        }
         
         .button-holder {
             position: relative;
@@ -129,52 +133,6 @@
             width: 10px;
             border-radius: 5px;
             background-color: white;
-        }
-
-
-        h3 {
-            text-align: center;
-            font-size: 25px;
-            color: RoyalBlue;
-        }
-
-        ol {
-            color: white;
-            text-align: left;
-        }
-
-        .numbers {
-            font-size: 25px;
-            color: RoyalBlue;
-        }
-
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-        }
-
-        .notes {
-            width: 1000px;
-            height: 780px;
-            background-color: black;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 0px;
-            overflow: hidden;
-            margin: auto;
-            border: 2px solid blue;
-            border-radius: 10px;
-            padding-bottom: 20px;
-        }
-
-        caption {
-            text-align: left;
-        }
-
-        ul {
-            color: white;
         }
 
     </style>
@@ -193,30 +151,22 @@
         <span id="slider-image-2"></span>
         <span id="slider-image-3"></span>
         <span id="slider-image-4"></span>
+        <span id="slider-image-5"></span>
         <div class="image-holder">
             <img src="{{ url_for('static', filename='image_1_pic.png') }}" alt="A picture of Braille" class="slider-image"/>
             <img src="{{ url_for('static', filename='image_2_.png') }}" alt="A cropped picture of Braille" class="slider-image"/>
             <img src="{{ url_for('static', filename='image_3.png') }}" alt="Uploading an image" class="slider-image"/>
             <img src="{{ url_for('static', filename='image_4.png') }}" alt="Submitting the image and getting a result" class="slider-image"/>
+            <a href="https://github.com/HelenG123/aeye-alliance/blob/master/static/braille_character_chart.jpg"><img src="{{ url_for('static', filename='image_5_pic_.png') }}" alt="Notes" class="slider-image"/></a>            
         </div>
         <div class="button-holder">
             <a href="#slider-image-1" class="slider-change"></a>
             <a href="#slider-image-2" class="slider-change"></a>
             <a href="#slider-image-3" class="slider-change"></a>
             <a href="#slider-image-4" class="slider-change"></a>
+            <a href="#slider-image-5" class="slider-change"></a>
         </div>
     </div></br>
-
-    <div class="notes">
-        <h3>NOTE:</h3>
-        <ul>
-            <li>Our Braille-to-text-converter only translates English Grade 1 Braille, one line at a time.</li>
-            <li>If you would like to translate multiple lines of Braille, please upload each line as an individual image.</li>
-            <li>We trained our model only on embossed Braille so images of handwritten Braille might not translate well.</li>
-            <li>Characters that our model can recognize:</li></br>
-            <a href="http://www.brailleauthority.org/tg/web-manual/images/appAbraille-ascii.jpg"><img src="{{ url_for('static', filename='braille_character_chart.jpg') }}" alt="Chart of all the Braille characters our model can recognize" class="center"></a>
-        </ul>
-    </div>
 
     <div class="bottom"> </br>
         <div class = "text"> <span> Brought to you by AEyeAlliance</span> </div>
