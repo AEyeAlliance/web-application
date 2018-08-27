@@ -9,7 +9,7 @@
 6. You should see something like the following:
 ![Flask output](https://github.com/AEyeAlliance/AEyeAlliance/blob/master/flask.png)
 7. Copy and paste http://127.0.0.1:5000/ into your browser.
-8. Once you have our web application up and running, you should be able to navigate to the following pages
+8. Once you have our web application up and running, you should be able to navigate to the pages below:
 
 ## Home Page
 <p align="center"> 
@@ -19,14 +19,13 @@
 ## Tutorial Page
 <p align="center"> 
   <img src="https://github.com/AEyeAlliance/AEyeAlliance/blob/master/tutorial.gif?raw=true" /></br>
-  This page shows you how our Braille-to-text converter works. 
+  This page shows you how our Braille-to-text converter works. Please see our tutorial before you try uploading an image.
 </p>
 
 ## Upload Image Page
 <p align="center"> 
   <img src="https://github.com/AEyeAlliance/AEyeAlliance/blob/master/upload.gif?raw=true" /></br>
-  Once you have checked out our tutorial page and understand how our Braille-to-text converter works,
-  click <a href="https://github.com/AEyeAlliance/AEyeAlliance/tree/master/test">here</a> to find Braille images that we have already pre-cropped.
+  Click <a href="https://github.com/AEyeAlliance/AEyeAlliance/tree/master/test">here</a> to find Braille images that we have already pre-cropped.
 </p>
 
 ## About Us Page
