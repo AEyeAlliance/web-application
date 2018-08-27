@@ -3,9 +3,10 @@
 <b> We are working on hosting and deploying our Flask web application on a server. Until we have a working URL for our web application, please follow the instructions below to run Flask and access our web app:</b></br>
 1. Clone/Download this repo.
 2. <a href="https://www.python.org/downloads/">Install Python.</a>
-3. Open your command prompt.
-4. Type `pip install Flask` then `pip install Flask-Uploads` in your command prompt.
-5. Run `python learn_flask.py`.
+3. Open your command line.
+4. Type `pip install Flask` then `pip install Flask-Uploads` in your command line.
+5. Navigate to the directory where your downloaded repo is stored by typing `cd Downloads` then `cd web-application`.
+6. Run `python learn_flask.py`.
 6. You should see something like the following:
 ![Flask output](https://github.com/AEyeAlliance/AEyeAlliance/blob/master/flask.png)
 7. Copy and paste http://127.0.0.1:5000/ into your browser.
@@ -19,13 +20,14 @@
 ## Tutorial Page
 <p align="center"> 
   <img src="https://github.com/AEyeAlliance/AEyeAlliance/blob/master/tutorial.gif?raw=true" /></br>
-  This page shows you how our Braille-to-text converter works. Please see our tutorial before you try uploading an image.
+  This page shows you how our Braille-to-text converter works. 
 </p>
 
 ## Upload Image Page
 <p align="center"> 
   <img src="https://github.com/AEyeAlliance/AEyeAlliance/blob/master/upload.gif?raw=true" /></br>
-  Click <a href="https://github.com/AEyeAlliance/AEyeAlliance/tree/master/test">here</a> to find Braille images that we have already pre-cropped.
+  Please see our tutorial before you try uploading an image.</br>
+  <b>Click <a href="https://github.com/AEyeAlliance/AEyeAlliance/tree/master/test">here</a> to find Braille images that we have already pre-cropped.</b>
 </p>
 
 ## About Us Page
