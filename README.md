@@ -3,7 +3,7 @@
 <b> We are working on hosting and deploying our Flask web application on a server. Until we have a working URL for our web application, please follow the instructions below to run Flask and access our web app:</b></br>
 1. Clone/Download this repo.
 2. <a href="https://www.python.org/downloads/">Install Python.</a>
-3. Open your command line.
+3. Open your terminal.
 4. Type `pip install Flask` then `pip install Flask-Uploads` in your command line.
 5. Navigate to the directory where your downloaded repo is stored by typing `cd Downloads` then `cd web-application`.
 6. Run `python learn_flask.py`.
